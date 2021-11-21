@@ -57,21 +57,22 @@ public class 의도를_분명히_밝혀라 {
         }
         return flaggedCells;
     }
-}
 
-/**
- * Cell 객체
- */
-class Cell {
+    /**
+     * Cell 객체
+     */
+    class Cell {
 
-    private final int STATUS_VALUE = 0;
-    private final int FLAGGED = 4;
-    int[] cell;
+        private final int STATUS_VALUE = 0;
+        private final int FLAGGED = 4;
+        int[] cell;
 
-    public boolean isFlagged() {
-        if (cell[STATUS_VALUE] == FLAGGED)
-            return true;
-        else
-            return false;
+        public boolean isFlagged() {
+            if (cell[STATUS_VALUE] == FLAGGED)
+                return true;
+            else
+                return false;
+        }
     }
 }
+
