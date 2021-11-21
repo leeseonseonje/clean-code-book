@@ -36,6 +36,7 @@ public class 의도를_분명히_밝혀라 {
     private final int FLAGGED = 4;
 
     public List<int[]> getFlaggedCells() {
+
         ArrayList<int[]> flaggedCells = new ArrayList<int[]>();
 
         for (int[] cell : flaggedCells) {
