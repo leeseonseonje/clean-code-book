@@ -18,7 +18,7 @@ public class 작게_만들어라 {
     }
 
     public static void includeSetupAndTeardownPages(PageData pageData, boolean isSuite) {
-
+        System.out.println("예제 샘플");
     }
 
     class PageData {
