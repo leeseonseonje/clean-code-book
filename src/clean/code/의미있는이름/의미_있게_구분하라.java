@@ -14,7 +14,7 @@ public class 의미_있게_구분하라 {
     }
 
     /**
-     * a1과 a2의 이름을 source 와 destination 을 사용한다면 코드 읽기가 훨씬 더 쉬워진다.
+     * a1과 a2의 이름을 source와 destination을 사용한다면 코드 읽기가 훨씬 더 쉬워진다.
      */
     public static void copyCharsGoodNaming(char[] source, char[] destination) {
         for (int i = 0; i < source.length; i++) {

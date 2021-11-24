@@ -21,16 +21,57 @@ public class EmployeeAndFactory {
         public Employee makeEmployee(EmployeeRecord record) throws Exception {
             switch (record.type) {
                 case COMMISSIONED:
-                    return new CommissionedEmployee(r);
+                    return new CommissionedEmployee(record);
                 case HOURLY:
-                    return new HourlyEmployee(r);
+                    return new HourlyEmployee(record);
                 case SALARIED:
-                    return new HourlEmployee(r);
+                    return new HourlEmployee(record);
                 default:
-                    throw new Exception("");
+                    throw new Exception("Error");
             }
 
         }
+    }
+
+    /**
+     * sample
+     */
+    class Money {}
+    static class EmployeeRecord {
+        Type type;
+        enum Type { COMMISSIONED, HOURLY, SALARIED }
+    }
+    class CommissionedEmployee extends Employee {
+        EmployeeRecord record;
+        public CommissionedEmployee(EmployeeRecord record) { this.record = record; }
+        @Override
+        public boolean isPayday() { return false; }
+        @Override
+        public Money calculatePay() { return null; }
+        @Override
+        public void deliveryPay(Money pay) {}
+    }
+    class HourlyEmployee extends Employee {
+        EmployeeRecord record;
+        public HourlyEmployee(EmployeeRecord record) {
+            this.record = record;
+        }
+        @Override
+        public boolean isPayday() { return false; }
+        @Override
+        public Money calculatePay() { return null; }
+        @Override
+        public void deliveryPay(Money pay) {}
+    }
+    class HourlEmployee extends Employee {
+        EmployeeRecord record;
+        public HourlEmployee(EmployeeRecord record) { this.record = record; }
+        @Override
+        public boolean isPayday() { return false; }
+        @Override
+        public Money calculatePay() { return null; }
+        @Override
+        public void deliveryPay(Money pay) {}
     }
 
 

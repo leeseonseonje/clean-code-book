@@ -17,7 +17,7 @@ public class 검색하기_쉬운_이름을_사용하라 {
 
     /**
      * 이름을 의미있게 지으면 함수가 길어진다.
-     * 하지만 그만큼 찾기가 쉬워진다. (WORK_DAYS_PER_WEEK)
+     * 하지만 그만큼 찾기가 쉬워진다.(WORK_DAYS_PER_WEEK)
      */
     public void easyToSearchName(int[] taskEstimate) {
 
