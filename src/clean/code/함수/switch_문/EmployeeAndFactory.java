@@ -19,7 +19,7 @@ public class EmployeeAndFactory {
 
         @Override
         public Employee makeEmployee(EmployeeRecord record) throws Exception {
-            switch (r.type) {
+            switch (record.type) {
                 case COMMISSIONED:
                     return new CommissionedEmployee(r);
                 case HOURLY:
